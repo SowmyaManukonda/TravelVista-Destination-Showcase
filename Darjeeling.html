@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling - Incredible India</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+            background: linear-gradient(to bottom, #f0f8ff, #e6f7ff); /* Light blue gradient background */
+            color: #333; /* Dark gray text for better readability */
+        }
+        .navbar {
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent black navbar */
+        }
+        .destination-details {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        }
+        .destination-details img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .photo-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+        }
+        h1, h2 {
+            color: #007bff; /* Blue headings for a fresh look */
+        }
+        ul {
+            list-style-type: none; /* Remove default bullet points */
+            padding-left: 0;
+        }
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee; /* Add a subtle border between list items */
+        }
+        ul li:last-child {
+            border-bottom: none; /* Remove border for the last item */
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .social-icons a {
+            color: #007bff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        /* Modal Styling */
+        .modal-content {
+            background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        }
+        .modal-body img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .modal-header {
+            border-bottom: none; /* Remove default border */
+        }
+        .modal-title {
+            color: #007bff; /* Blue title */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🌏 Incredible India</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Details -->
+    <div class="container destination-details my-5">
+        <h1 class="text-center">Darjeeling - The Queen of the Hills</h1>
+        <img src="assets/images/darjeeling.jpg" alt="Darjeeling">
+        
+        <!-- Best Time to Visit -->
+        <h2 class="mt-4">Best Time to Visit</h2>
+        <p>
+            The best time to visit Darjeeling is from <strong>March to May</strong> for pleasant weather and clear views of the Himalayas, and from <strong>October to December</strong> for winter charm.
+        </p>
+
+        <!-- Local Cuisine -->
+        <h2>Local Cuisine</h2>
+        <ul>
+            <li><strong>Momos</strong>: Steamed or fried dumplings filled with meat or vegetables.</li>
+            <li><strong>Thukpa</strong>: A hearty noodle soup with vegetables or meat.</li>
+            <li><strong>Darjeeling Tea</strong>: World-famous tea, best enjoyed fresh from the gardens.</li>
+            <li><strong>Churpee</strong>: A traditional cheese snack made from yak milk.</li>
+        </ul>
+
+        <!-- Festivals and Events -->
+        <h2>Festivals and Events</h2>
+        <ul>
+            <li><strong>Darjeeling Carnival</strong>: A vibrant celebration of local culture, music, and dance.</li>
+            <li><strong>Losar Festival</strong>: The Tibetan New Year celebrated with traditional music and dance.</li>
+            <li><strong>Tea Tourism Festival</strong>: A celebration of Darjeeling's tea culture with tours and tastings.</li>
+        </ul>
+
+        <!-- Travel Tips -->
+        <h2>Travel Tips</h2>
+        <ul>
+            <li><strong>Carry Warm Clothing</strong>: Even in summer, evenings can be chilly.</li>
+            <li><strong>Book in Advance</strong>: Darjeeling is a popular destination, so book accommodations and transport early.</li>
+            <li><strong>Respect Local Culture</strong>: Be mindful of the local customs and traditions.</li>
+            <li><strong>Stay Hydrated</strong>: Drink plenty of water, especially during outdoor activities.</li>
+        </ul>
+
+        <!-- Nearby Attractions -->
+        <h2>Top Attractions</h2>
+        <ul>
+            <li><strong>Tiger Hill</strong>: Famous for its breathtaking sunrise views over the Kanchenjunga range.</li>
+            <li><strong>Batasia Loop</strong>: A scenic railway loop with a beautiful garden and views of the mountains.</li>
+            <li><strong>Darjeeling Himalayan Railway</strong>: A UNESCO World Heritage Site, also known as the "Toy Train."</li>
+            <li><strong>Padmaja Naidu Himalayan Zoological Park</strong>: Home to the endangered red panda and snow leopard.</li>
+        </ul>
+
+        <!-- Accommodation Options -->
+        <h2>Where to Stay</h2>
+        <ul>
+            <li><strong>Luxury</strong>: Mayfair Darjeeling, Windamere Hotel.</li>
+            <li><strong>Mid-Range</strong>: Cedar Inn, Elgin Darjeeling.</li>
+            <li><strong>Budget</strong>: Zostel Darjeeling, The Hosteller Darjeeling.</li>
+        </ul>
+
+        <!-- Sample Itinerary -->
+        <h2>Sample Itinerary</h2>
+        <p><strong>Day 1:</strong></p>
+        <ul>
+            <li>Morning: Arrive in Darjeeling and check into your hotel.</li>
+            <li>Afternoon: Visit the Padmaja Naidu Himalayan Zoological Park.</li>
+            <li>Evening: Explore Chowrasta and Mall Road.</li>
+        </ul>
+        <p><strong>Day 2:</strong></p>
+        <ul>
+            <li>Morning: Visit Tiger Hill for sunrise and Batasia Loop.</li>
+            <li>Afternoon: Take a ride on the Darjeeling Himalayan Railway.</li>
+            <li>Evening: Enjoy a cup of Darjeeling tea at a local cafe.</li>
+        </ul>
+        <p><strong>Day 3:</strong></p>
+        <ul>
+            <li>Morning: Visit a tea garden and learn about tea production.</li>
+            <li>Afternoon: Explore the Peace Pagoda and Japanese Temple.</li>
+            <li>Evening: Depart from Darjeeling.</li>
+        </ul>
+
+        <!-- Interactive Map -->
+        <h2>Explore on Map</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.776430098!2d88.000000!3d27.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e42f1a1a1a1a1a%3A0x1a1a1a1a1a1a1a1a!2sDarjeeling%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1699281234567!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+        <!-- Photo Gallery -->
+        <h2>Photo Gallery</h2>
+        <div class="row photo-gallery">
+            <!-- Image 1 -->
+            <div class="col-md-4 mb-4">
+                <img src="assets/images/darjeeling1.jpg" alt="Tiger Hill" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal1">
+            </div>
+            <!-- Image 2 -->
+            <div class="col-md-4 mb-4">
+                <img src="assets/images/darjeeling2.jpg" alt="Batasia Loop" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal2">
+            </div>
+            <!-- Image 3 -->
+            <div class="col-md-4 mb-4">
+                <img src="assets/images/darjeeling3.jpg" alt="Darjeeling Himalayan Railway" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal3">
+            </div>
+        </div>
+
+        <!-- Modals for Images -->
+        <!-- Modal for Image 1 -->
+        <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel1">Tiger Hill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/darjeeling1.jpg" alt="Tiger Hill" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Image 2 -->
+        <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel2">Batasia Loop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/darjeeling2.jpg" alt="Batasia Loop" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Image 3 -->
+        <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel3">Darjeeling Himalayan Railway</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/darjeeling3.jpg" alt="Darjeeling Himalayan Railway" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Options -->
+        <h2>Plan Your Trip</h2>
+        <p>Book your stay, tours, and activities with our trusted partners:</p>
+        <a href="https://example.com/book-darjeeling" class="btn btn-primary">Book Now</a>
+
+        <!-- Social Media Integration -->
+        <h2>Follow Us</h2>
+        <div class="mt-3 social-icons">
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
