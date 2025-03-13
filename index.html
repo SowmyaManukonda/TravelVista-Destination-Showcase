@@ -20,7 +20,7 @@
         .carousel-item img {
             height: 600px;
             width: 100%;
-            object-fit: contain; /* Ensures the image covers the area without distortion */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
         }
         .carousel-caption {
             background: rgba(0, 0, 0, 0.6);
@@ -175,6 +175,7 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
+
     <!-- About Section -->
     <section id="about" class="container my-5 text-center">
         <h2 class="animate__animated animate__fadeIn">🌍 About India</h2>
@@ -182,46 +183,46 @@
     </section>
 
     <!-- Destinations -->
-<section id="destinations" class="container my-5">
-    <h2 class="text-center animate__animated animate__fadeIn">🌆 Popular Destinations</h2>
-    <div class="row">
-        <!-- Manali -->
-        <div class="col-md-4 mb-4">
-            <a href="manali.html" class="text-decoration-none">
-            <div class="card destination-card animate__animated animate__fadeInUp">
-                <img src="assets/images/manali.jpg" class="card-img-top" alt="Manali">
-                <div class="card-body">
-                    <h5 class="card-title">Manali</h5>
-                    <p class="card-text">A stunning hill station surrounded by snow-capped mountains.</p>
-                </div>
+    <section id="destinations" class="container my-5">
+        <h2 class="text-center animate__animated animate__fadeIn">🌆 Popular Destinations</h2>
+        <div class="row">
+            <!-- Manali -->
+            <div class="col-md-4 mb-4">
+                <a href="manali.html" class="text-decoration-none">
+                    <div class="card destination-card animate__animated animate__fadeInUp">
+                        <img src="assets/images/manali.jpg" class="card-img-top" alt="Manali">
+                        <div class="card-body">
+                            <h5 class="card-title">Manali</h5>
+                            <p class="card-text">A stunning hill station surrounded by snow-capped mountains.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            </a>
-        </div>
-                <!-- Goa -->
-                <div class="col-md-4 mb-4">
-                    <a href="goa.html" class="text-decoration-none">
+            <!-- Goa -->
+            <div class="col-md-4 mb-4">
+                <a href="goa.html" class="text-decoration-none">
                     <div class="card destination-card animate__animated animate__fadeInUp">
                         <img src="assets/images/goa beach.jpg" class="card-img-top" alt="Goa">
                         <div class="card-body">
                             <h5 class="card-title">Goa</h5>
-                            <p class="card-text">Golden beaches, vibrant nightlife, and Portuguese heritage</p>
+                            <p class="card-text">Golden beaches, vibrant nightlife, and Portuguese heritage.</p>
                         </div>
                     </div>
-                    </a>
-                </div>
-        <!-- Kerala -->
-        <div class="col-md-4 mb-4">
-            <a href="kerala.html" class="text-decoration-none">
-            <div class="card destination-card animate__animated animate__fadeInUp">
-                <img src="assets/images/kerala.jpg" class="card-img-top" alt="Kerala">
-                <div class="card-body">
-                    <h5 class="card-title">Kerala</h5>
-                    <p class="card-text">Experience lush greenery and beautiful backwaters.</p>
-                </div>
+                </a>
             </div>
-        </a>
-        </div>
-        <!-- Rajasthan -->
+            <!-- Kerala -->
+            <div class="col-md-4 mb-4">
+                <a href="kerala.html" class="text-decoration-none">
+                    <div class="card destination-card animate__animated animate__fadeInUp">
+                        <img src="assets/images/kerala.jpg" class="card-img-top" alt="Kerala">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerala</h5>
+                            <p class="card-text">Experience lush greenery and beautiful backwaters.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                <!-- Rajasthan -->
         <div class="col-md-4 mb-4">
             <a href="Rajasthan.html" class="text-decoration-none">
             <div class="card destination-card animate__animated animate__fadeInUp">
@@ -342,7 +343,11 @@
         </div>
     </a>
     </div>
-</section>
+
+            <!-- Add more destination cards here -->
+        </div>
+    </section>
+
     <!-- Contact Form -->
     <section id="contact" class="container my-5">
         <h2 class="text-center animate__animated animate__fadeIn">📩 Contact Us</h2>
